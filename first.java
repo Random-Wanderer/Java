@@ -103,6 +103,7 @@ public class first {
       } while(e < 5);
       */
 
+      /* Enhanced for loop
       public static void main(String[] args){
 
         int [] numbs = {1, 2, 3, 4, 5};
@@ -119,5 +120,50 @@ public class first {
         System.out.print(name);
         System.out.print(",");
        }
+      }
+      */
+
+      /*
+      static void myMethod(String fname){
+          System.out.print(fname + " was given 2 apples.");
+      }
+
+      public static void main(String[] args) {
+        myMethod("Bob");
+      }
+      */
+
+      /*
+      static int myMethod(int num1, int num2){
+        return num1 + num2;
+      }
+
+      public static void main(String[] args){
+        System.out.print(myMethod(2, 4));
+      }
+      */
+
+      /*
+      static int adding(int x, int y){
+        return x + y;
+      }
+
+      public static void main(String[] args) {
+        int nums = adding( 3, 2);
+        System.out.print(nums);
+      }
+      */
+
+      public static void main(String[] args) {
+        int total = sum(5);
+        System.out.print(total);
+      }
+
+      public static int sum(int j) {
+        if (j > 0) {
+          return j + sum(j - 1);
+        } else {
+          return 0;
+        }
       }
 }
