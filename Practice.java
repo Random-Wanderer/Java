@@ -24,7 +24,7 @@ public class Practice {
     System.out.println(pie.slices);
   }
   */
-
+  /*
   public static void main(String[] args) {
     Practice example = new Practice();
     int returned = example.go();
@@ -40,7 +40,28 @@ public class Practice {
 
   public static int go(int x) {
     return x;
+  } */
+
+  /*
+  public static void main(String[] args) {
+    // obj of method class
+    Practice example = new Practice();
+    int returned = example.go();
+    int value = Practice.go(5);
   }
+
+  // method
+  public int go() {
+    return 5;
+  }
+
+  // method overload
+  public static int go(int x) {
+    return x;
+  }
+  */
+
+
 }
 
 /*
