@@ -61,21 +61,60 @@ public class Practice {
   }
   */
 
+  public static void main(String[] args) {
+    Pizza one = new Pizza();
+    Pizza two = new Pizza();
+    System.out.println(one == two);
+    System.out.println(one.equals(two));
+  }
 
 }
 
-/*
 class Pizza {
-  int slices;
+  int size = 0;
+  int slices = null;;
   String topping;
-  Pizza() {}
+  Pizza() {};
   Pizza(int pieces){
     slices = pieces;
+
+    public boolean Practice(Object o) {
+      Pizza other = (Pizza) o;
+      if(this.size == other.size) {
+        if(this.topping == other.topping) {
+          return true;
+        }
+      }
+      return false;
+    }
+
   }
 
   public void eat() {
     slices = slices -1;
   }
 
+}
+
+
+/*
+public class Person{
+
+  private int age;
+
+  public void setAge(int val) {
+    age = val;
+  }
+
+  public int getAge() {
+    return age;
+  }
+}
+
+class house {
+  public void tenant() {
+    Person person = new Person();
+    person.setAge(1);
+  }
 }
 */
